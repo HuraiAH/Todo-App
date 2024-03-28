@@ -5,8 +5,10 @@ function TodoForm() {
   const [todo, setTodo] = useState("");
   const { addTodo } = useTodo();
   const add = (e) => {
-    e.preventDefault;
+    e.preventDefault();
+
     addTodo({ todo, completed: false });
+
     setTodo("");
   };
   return (
